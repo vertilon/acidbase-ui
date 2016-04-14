@@ -1,0 +1,10 @@
+version: '2'
+services:
+  salt-server:
+    build: .
+#    image: vertilon/salt:master
+    ports:
+      - "4505:4505" 
+      - "4506:4506"
+      - "8080:8080"
+    hostname: salt
